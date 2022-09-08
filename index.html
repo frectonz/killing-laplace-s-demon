@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Killing Laplace's Demon</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap");
+  </style>
+</head>
+
+<body>
+  <main class="grid place-items-center">
+    <section class="p-6 container grid md:grid-cols-2 md:grid-rows-1 grid-cols-1 grid-rows-2 place-items-center gap-4">
+      <div class="flex flex-col justify-center gap-6">
+        <h1 class="text-4xl">What is it?</h1>
+        <p class="text-lg">
+          This ebook tries to introduce the reader to the idea of determinism.
+          It mentions topics such as the Bayes' Theorem, Chaos Theory, The
+          Uncertainty Principle, Hawking Radiation and mainly Laplace's Demon.
+        </p>
+        <button class="py-2 px-4 active:scale-95" id="downloadBtn">Download It!</button>
+      </div>
+      <img src="/book.png" alt="Book Cover Image" />
+    </section>
+  </main>
+
+  <main class="grid place-items-center">
+    <div class="container p-6 flex flex-col gap-2">
+      <p>If you have finished reading it, tell me what you think about it?</p>
+
+      <form class="flex items-center gap-4">
+        <p>It was</p>
+        <div class="flex items-center justify-center gap-2">
+          <input type="radio" id="bad" name="rating" value="BAD">
+
+          <label for="bad">BAD</label>
+        </div>
+
+        <div class="flex items-center justify-center gap-2">
+          <input type="radio" id="ok" name="rating" value="OK">
+
+          <label for="OK">OK</label>
+        </div>
+
+        <div class="flex items-center justify-center gap-2">
+          <input type="radio" id="great" name="rating" value="GREAT">
+          <label for="great">GREAT</label>
+        </div>
+
+        <p>.</p>
+      </form>
+
+      <p class="text mb-4">
+        If you want to further explore this topic, check out this YouTube
+        playlist.
+      </p>
+
+      <iframe class="my-4 w-full h-[500px]"
+        src="https://www.youtube.com/embed/videoseries?list=PLAvAmlUjUePdOgbgU2STLJD8PhpY4Y06I"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+      <p>
+        If you have questions, suggestions or anything else contact me at the
+        following links.
+      </p>
+
+      <div class="flex items-center mt-4 gap-4">
+        <a href="https://t.me/frectonz" target="_blank">
+          <svg viewBox="0 0 50 50">
+            <path
+              d="M25,2c12.703,0,23,10.297,23,23S37.703,48,25,48S2,37.703,2,25S12.297,2,25,2z M32.934,34.375	c0.423-1.298,2.405-14.234,2.65-16.783c0.074-0.772-0.17-1.285-0.648-1.514c-0.578-0.278-1.434-0.139-2.427,0.219	c-1.362,0.491-18.774,7.884-19.78,8.312c-0.954,0.405-1.856,0.847-1.856,1.487c0,0.45,0.267,0.703,1.003,0.966	c0.766,0.273,2.695,0.858,3.834,1.172c1.097,0.303,2.346,0.04,3.046-0.395c0.742-0.461,9.305-6.191,9.92-6.693	c0.614-0.502,1.104,0.141,0.602,0.644c-0.502,0.502-6.38,6.207-7.155,6.997c-0.941,0.959-0.273,1.953,0.358,2.351	c0.721,0.454,5.906,3.932,6.687,4.49c0.781,0.558,1.573,0.811,2.298,0.811C32.191,36.439,32.573,35.484,32.934,34.375z">
+            </path>
+          </svg>
+        </a>
+
+        <a href="https://twitter.com/frectonz" target="_blank">
+          <svg viewBox="0 0 50 50">
+            <path
+              d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M36.237,20.524 c0.01,0.236,0.016,0.476,0.016,0.717C36.253,28.559,30.68,37,20.491,37c-3.128,0-6.041-0.917-8.491-2.489 c0.433,0.052,0.872,0.077,1.321,0.077c2.596,0,4.985-0.884,6.879-2.37c-2.424-0.044-4.468-1.649-5.175-3.847 c0.339,0.065,0.686,0.1,1.044,0.1c0.505,0,0.995-0.067,1.458-0.195c-2.532-0.511-4.441-2.747-4.441-5.432c0-0.024,0-0.047,0-0.07 c0.747,0.415,1.6,0.665,2.509,0.694c-1.488-0.995-2.464-2.689-2.464-4.611c0-1.015,0.272-1.966,0.749-2.786 c2.733,3.351,6.815,5.556,11.418,5.788c-0.095-0.406-0.145-0.828-0.145-1.262c0-3.059,2.48-5.539,5.54-5.539 c1.593,0,3.032,0.672,4.042,1.749c1.261-0.248,2.448-0.709,3.518-1.343c-0.413,1.292-1.292,2.378-2.437,3.064 c1.122-0.136,2.188-0.432,3.183-0.873C38.257,18.766,37.318,19.743,36.237,20.524z">
+            </path>
+          </svg>
+        </a>
+
+        <a href="https://github.com/frectonz" target="_blank">
+          <svg viewBox="0 0 64 64">
+            <path
+              d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z">
+            </path>
+          </svg>
+        </a>
+
+        <a href="https://www.linkedin.com/in/fraol-lemecha/" target="_blank">
+          <svg viewBox="0 0 3333 3333" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+            image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+            <path
+              d="M1667 0c920 0 1667 746 1667 1667 0 920-746 1667-1667 1667C747 3334 0 2588 0 1667 0 747 746 0 1667 0zm-215 1336h342v175h5c48-86 164-175 338-175 361 0 428 225 428 517v596h-357v-528c0-126-3-288-186-288-186 0-214 137-214 279v537h-357V1336zm-247-309c0 102-83 186-186 186-102 0-186-83-186-186 0-102 83-186 186-186 102 0 186 83 186 186zm-371 309h371v1113H834V1336z">
+            </path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

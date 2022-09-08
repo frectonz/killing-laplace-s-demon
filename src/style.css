@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-title: #00ff19;
+  --text-shadow-blur: 10px;
+  --text-shadow-y: 4px;
+  --text-shadow-color: #00ff19;
+  --color-bg: #000000;
+}
+
+html {
+  font-family: system-ui, sans-serif;
+  background-color: var(--color-bg);
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Fira Code", monospace;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--color-title);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-title);
+}
+
+img {
+  width: 70%;
+}
+
+main {
+  width: 100vw;
+  min-height: 100vh;
+  color: var(--color-title);
+  text-shadow: 0 var(--text-shadow-y) var(--text-shadow-blur) var(--color-title);
+}
+
+main button {
+  background-color: var(--color-title);
+  color: black;
+  width: fit-content;
+  box-shadow: 3px 3px green;
+}
+
+form input[type="radio"] {
+  display: inline-block;
+  box-shadow: unset;
+  appearance: none;
+  font: inherit;
+  color: currentColor;
+  width: 1em;
+  height: 1em;
+  border: 0.15em solid currentColor;
+  cursor: pointer;
+  box-shadow: 0 var(--text-shadow-y) var(--text-shadow-blur);
+  outline: 0;
+}
+
+form input[type="radio"]:checked {
+  background-color: currentColor;
+}
+
+svg {
+  width: 50px;
+  height: 50px;
+  fill: var(--color-title);
+}
