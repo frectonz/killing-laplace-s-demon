@@ -1,2 +1,6 @@
 .env
 node_modules
+.vscode
+firebaseConfig.ts
+dist
+
