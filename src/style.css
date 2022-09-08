@@ -4,8 +4,8 @@
 
 :root {
   --color-title: #00ff19;
-  --text-shadow-blur: 10px;
-  --text-shadow-y: 4px;
+  --text-shadow-blur: 5px;
+  --text-shadow-y: 2px;
   --text-shadow-color: #00ff19;
   --color-bg: #000000;
 }
