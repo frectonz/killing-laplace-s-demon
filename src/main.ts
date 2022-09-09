@@ -1,13 +1,16 @@
 import './style.css';
 
 import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 import { collection, doc, getFirestore, increment, setDoc, updateDoc } from "firebase/firestore";
+
 import firebaseConfig from './firebaseConfig';
 
 const RATING_KEY = "rating";
 const RATING_DOC_KEY = "rating-key";
 
-initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+getAnalytics(app);
 
 window.addEventListener("load", () => {
   const radioInputs = document.querySelectorAll('input[type="radio"]') as NodeListOf<HTMLInputElement>;
