@@ -44,7 +44,7 @@ main {
   text-shadow: 0 var(--text-shadow-y) var(--text-shadow-blur) var(--color-title);
 }
 
-main button {
+#download-btn {
   background-color: var(--color-title);
   color: black;
   width: fit-content;
